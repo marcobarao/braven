@@ -6,5 +6,5 @@
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
-    padding: 7.389vh 9.6vw 2.709vh 9.6vw;
+    padding: var(--spacing-container-top) var(--spacing-container-right) var(--spacing-container-bottom) var(--spacing-container-left);
 }
