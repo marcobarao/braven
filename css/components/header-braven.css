@@ -1,0 +1,6 @@
+.header-breaven > .title {
+    font-size: 1.76em;
+    text-transform: uppercase;
+    color: var(--color-zero);
+    letter-spacing: 1.2rem;
+}

@@ -1,0 +1,10 @@
+.container-braven {
+    box-sizing: border-box;
+    background-image: url("../../img/braven.png");
+    background-size: auto 100%;
+    background-position: -250px 0;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    padding: 7.389vh 9.6vw 2.709vh 9.6vw;
+}
