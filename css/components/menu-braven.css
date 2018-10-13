@@ -1,7 +1,3 @@
-.menu-braven {
-    z-index: 1030;
-}
-
 .menu-braven > .menu {
     display: block;
     width: 20px;
@@ -23,9 +19,9 @@
     background-color: var(--color-negative-light);
     padding: var(--spacing-container-top) var(--spacing-container-right) var(--spacing-container-bottom) var(--spacing-container-left);
     transform: translateX(100%);
+    z-index: 10;
+
     transition: transform 200ms linear;
-    pointer-events: none;
-    z-index: 1031;
 }
 
 .menu-braven > .items.-active {
@@ -52,12 +48,10 @@
     color: var(--color-zero);
     text-decoration: none;
     font-weight: normal;
-    z-index: 1033;
 }
 
 .menu-braven .item {
     margin-left: var(--spacing-very-small);
-    z-index: 1032;
 }
 
 .menu-braven .item:not(:last-child) {

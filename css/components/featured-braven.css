@@ -1,3 +1,12 @@
+.featured-braven {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 2;
+    padding-bottom: var(--spacing-very-big);
+    padding-left: 32px;
+}
+
 .featured-braven > .action {
     display: block;
     position: relative;
@@ -38,7 +47,7 @@
     text-transform: uppercase;
     color: var(--color-primary);
     transform-origin: left top;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg) translate(-100px, 30px);
 }
 
 .featured-braven > .subtitle {
@@ -58,5 +67,13 @@
     font-size: 1rem;
     color: var(--color-primary-light);
     letter-spacing: 0.029em;
-    margin-left: var(--spacing-very-small);
+}
+
+.featured-braven > .subtitle > .star {
+    display: inline-block;
+    width: 1.3rem;
+    height: 1.3rem;
+    background-image: url('../../img/star.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
