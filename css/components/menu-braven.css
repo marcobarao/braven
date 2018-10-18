@@ -57,3 +57,31 @@
 .menu-braven .item:not(:last-child) {
     margin-bottom: 2.352em;
 }
+
+@media (min-width: 980px) {
+    .menu-braven > .menu {
+        display: none;
+    }
+    .menu-braven > .items {
+        position: static;
+        transform: none;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        padding: 0;
+    }
+    .menu-braven > .items::before {
+        display: none;
+    }
+    .menu-braven .item {
+        display: inline-block;
+        margin: 0;
+    }
+    .menu-braven .action {
+        text-transform: uppercase;
+    }
+    .menu-braven .item:not(:last-child) {
+        margin-bottom: 0;
+        margin-right: var(--spacing-small);
+    }
+}
