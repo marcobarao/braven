@@ -1,0 +1,71 @@
+.information-braven {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    list-style-type: none;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+
+    transition: transform 400ms linear;
+}
+
+.information-braven.-active {
+    transform: translateY(0);
+}
+
+.information-braven > .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--color-negative);
+}
+
+.information-braven > .item > .title {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.information-braven > .item > .information {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+@media (min-width: 900px) {
+    .information-braven {
+        width: 100vw;
+        height: 5rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        transform: none;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    .information-braven > .item > .information {
+        margin: 0;
+    }
+    .information-braven > .item > .title {
+        margin: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .information-braven .item {
+        flex-direction: row;
+        align-items: center;
+    }
+    .information-braven > .item > .information {
+        margin-left: 0.7rem;
+    }
+}

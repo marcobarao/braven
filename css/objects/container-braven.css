@@ -4,16 +4,20 @@
     position: relative;
     box-sizing: border-box;
     background-image: url("../../img/braven.png");
-    background-size: auto 100%;
-    background-position: -250px 0;
+    background-size: cover;
+    background-position: 25% 0;
     background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     min-width: 375px;
-    min-height: 812px;
     padding: var(--spacing-container-top) var(--spacing-container-right) var(--spacing-container-bottom) var(--spacing-container-left);
     overflow: hidden;
     z-index: 1;
+    transition: background-position 400ms linear;
+}
+
+.container-braven.-info {
+    background-position: 95% 0;
 }
 
 @media (min-width: 980px) {

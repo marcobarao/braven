@@ -1,0 +1,26 @@
+.legend-braven {
+    display: none;
+}
+
+@media (min-width: 1300px) {
+    .legend-braven {
+        display: block;
+        position: absolute;
+        right: 12vw;
+        top: 50%;
+        transform: translateY(-80%);
+        z-index: 2;
+    }
+    
+    .legend-braven > .title {
+        display: inline-block;
+        max-width: 400px;
+        font-size: 3rem;
+        color: var(--color-negative);
+    }
+    
+    .legend-braven > .subtitle {
+        font-size: 1.5rem;
+        color: var(--color-negative);
+    }   
+}

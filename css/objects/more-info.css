@@ -1,0 +1,32 @@
+.more-info {
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    color: var(--color-negative);
+    text-decoration: none;
+    background-image: url('../../img/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    z-index: 11;
+
+    -webkit-transition: bottom 400ms linear;
+    -moz-transition: bottom 400ms linear;
+    -o-transition: bottom 400ms linear;
+    transition: bottom 400ms linear;
+}
+
+.more-info.-active{
+    bottom: 90vh;
+    background-image: url('../../img/arrow-up.svg');
+}
+
+@media (min-width: 900px) {
+    .more-info {
+        display: none;
+    }
+}

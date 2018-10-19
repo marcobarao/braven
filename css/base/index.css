@@ -4,4 +4,5 @@ body {
     min-width: 375px;
     min-height: 812px;
     overflow: hidden;
+    box-sizing: border-box;
 }

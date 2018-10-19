@@ -10,7 +10,6 @@
 }
 
 .menu-braven > .items {
-    box-sizing: border-box;
     position: absolute;
     top: 0;
     left: 0;

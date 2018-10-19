@@ -72,9 +72,48 @@
 
 .featured-braven > .subtitle > .star {
     display: inline-block;
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1.4rem;
+    height: 1.4rem;
     background-image: url('../../img/star.svg');
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+.container-braven.-info .featured-braven {
+    display: none;
+}
+
+@media(max-height: 780px){
+    .featured-braven > .title {
+        transform: rotate(-90deg) translate(-35vh, 30px);
+    }
+    .featured-braven > .subtitle {
+        margin-top: 35vh;
+    }
+}
+
+@media(max-height: 569px){
+    .featured-braven > .title {
+        transform: rotate(-90deg) translate(-37vh, 30px);
+    }
+    .featured-braven > .subtitle {
+        margin-top: 35vh;
+    }
+}
+
+@media (min-width: 900px) {
+    .featured-braven > .subtitle {
+        display: flex;
+        align-items: center;
+    }
+    .featured-braven > .subtitle > strong {
+        display: inline;
+    }
+    .featured-braven > .subtitle > .star {
+        position: relative;
+        margin-left: 0.7rem;
+    }
+    .featured-braven > .subtitle > small {
+        margin-top: 0.5rem;
+    }
 }
